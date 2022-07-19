@@ -28,6 +28,7 @@ function main() {
         "pages.github.com"
         "partner.github.com"
         "primer.style"
+        "raw.githubusercontent.com"
         "resources.github.com"
         "services.github.com"
         "skills.github.com"
@@ -35,7 +36,6 @@ function main() {
         "support.github.com"
         "thegithubshop.com"
         "vscode.github.com"
-        "*.githubusercontent.com"
     )
 
     if [ -f "hosts" ]; then
