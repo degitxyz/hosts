@@ -1,0 +1,36 @@
+name: GitHub hosts
+
+on:
+  push:
+  schedule:
+    - cron: '0 */2 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run
+        run: |
+          bash ./domain2ip.sh
+
+      - name: Config
+        run: |
+          git config --local user.email "sengshinlee@gmail.com"
+          git config --local user.name "Sengshin Lee"
+
+      - name: Add
+        run: |
+          git add .
+
+      - name: Commit
+        run: |
+          git commit -m "Update time: $(date)."
+
+      - name: Push
+        run: |
+          git push -u origin master
