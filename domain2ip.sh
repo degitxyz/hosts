@@ -42,6 +42,14 @@ function main() {
         rm hosts
     fi
 
+    if [ -f "index.html" ]; then
+        rm index.html
+    fi
+
+    echo "<PRE>" | tee index.html
+    cat hosts | tee -a index.html
+    echo "</PRE>" | tee -a index.html
+
     domain2ip
 }
 
