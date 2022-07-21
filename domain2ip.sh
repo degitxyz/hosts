@@ -48,9 +48,15 @@ function main() {
         rm index.html
     fi
 
-    echo "<PRE>" | tee index.html
-    cat hosts | tee -a index.html
-    echo "</PRE>" | tee -a index.html
+    # echo "<PRE>" | tee index.html
+    # cat hosts | tee -a index.html
+    # echo "</PRE>" | tee -a index.html
+    
+    if [ -f "index.md" ]; then
+        rm index.md
+    fi
+    
+    cp hosts index.md
 }
 
 main
