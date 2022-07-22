@@ -47,10 +47,6 @@ function main() {
     if [ -f "index.html" ]; then
         rm index.html
     fi
-
-    # echo "<PRE>" | tee index.html
-    # cat hosts | tee -a index.html
-    # echo "</PRE>" | tee -a index.html
     
     if [ -f "index.md" ]; then
         rm index.md
