@@ -55,6 +55,7 @@ function main() {
         rm index.md
     fi
     
+    echo "DONE!"
     cp hosts index.md
 }
 
