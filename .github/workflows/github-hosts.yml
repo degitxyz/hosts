@@ -20,7 +20,4 @@ jobs:
           git config --local user.email "sengshinlee@gmail.com"
           git config --local user.name "Sengshin Lee"
           git add .
-          if [ $(git status | grep "new file" | wc -l) -ne 0 ]; then
-            git commit -m "Update time: $(date)."
-            git push -u origin master
-          fi
+          [ $(git status | grep "new file" | wc -l) -ne 0 ] && git commit -m "Update time: $(date)."; git push -u origin master
