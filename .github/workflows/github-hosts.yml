@@ -1,4 +1,4 @@
-name: GitHub hosts
+name: Update hosts
 
 on:
   push:
@@ -16,21 +16,11 @@ jobs:
 
       - name: Run
         run: |
-          bash ./domain2ip.sh
-
-      - name: Config
-        run: |
+          bash domain2ip.sh
           git config --local user.email "sengshinlee@gmail.com"
           git config --local user.name "Sengshin Lee"
-
-      - name: Add
-        run: |
           git add .
-
-      - name: Commit
-        run: |
-          git commit -m "Update time: $(date)."
-
-      - name: Push
-        run: |
-          git push -u origin master
+          if [ $(git status | grep "new file" | wc -l) -ne 0 ]; then
+            git commit -m "Update time: $(date)."
+            git push -u origin master
+          fi
