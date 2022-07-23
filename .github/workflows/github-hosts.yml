@@ -19,5 +19,8 @@ jobs:
           bash domain2ip.sh
           git config --local user.email "sengshinlee@gmail.com"
           git config --local user.name "Sengshin Lee"
+          git status
           git add .
+          git status
           [ $(git status | grep "new file" | wc -l) -ne 0 ] && git commit -m "Update time: $(date)."; git push -u origin master
+          git status
