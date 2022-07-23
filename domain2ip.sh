@@ -46,16 +46,11 @@ function main() {
     fi
 
     domain2ip
-
-    if [ -f "index.html" ]; then
-        rm index.html
-    fi
     
     if [ -f "index.md" ]; then
         rm index.md
     fi
     
-    echo "DONE!"
     cp hosts index.md
 }
 
