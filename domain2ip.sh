@@ -36,6 +36,9 @@ function main() {
         "support.github.com"
         "thegithubshop.com"
         "vscode.github.com"
+        "download.wireguard.com"
+        "wireguard.com"
+        "www.wireguard.com"
     )
 
     if [ -f "hosts" ]; then
