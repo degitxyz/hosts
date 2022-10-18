@@ -39,6 +39,8 @@ function main() {
         "download.wireguard.com"
         "wireguard.com"
         "www.wireguard.com"
+        "1111-releases.cloudflareclient.com"
+        "pkg.cloudflareclient.com"
     )
 
     if [ -f "hosts" ]; then
