@@ -36,14 +36,14 @@ function main() {
         "support.github.com"
         "thegithubshop.com"
         "vscode.github.com"
-
+        ""
         "download.wireguard.com"
         "wireguard.com"
         "www.wireguard.com"
-
+        ""
         "archive.mozilla.org"
         "vpn.mozilla.org"
-
+        ""
         "1111-releases.cloudflareclient.com"
         "cloudflare.com"
         "dash.cloudflare.com"
