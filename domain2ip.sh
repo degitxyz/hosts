@@ -47,11 +47,11 @@ function main() {
 
     domain2ip
     
-    if [ -f "index.md" ]; then
-        rm index.md
+    if [ -f "index.html" ]; then
+        rm index.html
     fi
     
-    cp hosts index.md
+    cp hosts index.html
 }
 
 main
