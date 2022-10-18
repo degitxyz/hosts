@@ -1,1 +1,5 @@
-A project that regularly updates GitHub hosts every two hours to solve the problem of failed access and slow loading of GitHub.
+A project that regularly updates hosts every two hours to temporarily solve the problem of some blocked websites.
+
+- GitHub
+- WireGuard
+- Cloudflare
