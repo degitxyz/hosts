@@ -36,12 +36,17 @@ function main() {
         "support.github.com"
         "thegithubshop.com"
         "vscode.github.com"
+
         "download.wireguard.com"
         "wireguard.com"
         "www.wireguard.com"
+
+        "archive.mozilla.org"
+        "vpn.mozilla.org"
+
+        "1111-releases.cloudflareclient.com"
         "cloudflare.com"
         "dash.cloudflare.com"
-        "1111-releases.cloudflareclient.com"
         "pkg.cloudflareclient.com"
     )
 
@@ -50,15 +55,15 @@ function main() {
     fi
 
     domain2ip
-    
+
     if [ -f "index.html" ]; then
         rm index.html
     fi
-    
+
     cp hosts index.html
     sed -i '1i\<pre>' index.html
     sed -i '$a\</pre>' index.html
-    
+
     wget https://www.mozilla.org/en-US/products/vpn/download -O 1.html
 }
 
