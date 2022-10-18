@@ -63,8 +63,6 @@ function main() {
     cp hosts index.html
     sed -i '1i\<pre>' index.html
     sed -i '$a\</pre>' index.html
-
-    wget https://www.mozilla.org/en-US/products/vpn/download -O 1.html
 }
 
 main
