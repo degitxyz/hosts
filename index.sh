@@ -13,5 +13,11 @@ EOF
 fi
 
 cp hosts index.html
+
+cat >>index.html <<EOF
+Download
+  https://hosts.sengshinlee.com/hosts
+EOF
+
 sed -i '1i\<pre>' index.html
 sed -i '$a\</pre>' index.html
