@@ -1,6 +1,8 @@
-A project that regularly updates hosts every two hours to temporarily solve the problem of some blocked websites.
+Description
+  A project that regularly updates hosts every two hours to temporarily solve the problem of some blocked websites.
 
-- GitHub
-- WireGuard
-- Mozilla VPN
-- Cloudflare
+Websites
+  GitHub
+  WireGuard
+  Mozilla VPN
+  Cloudflare
