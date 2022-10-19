@@ -19,6 +19,9 @@ cat >>index.html <<EOF
 
 Download
   https://hosts.sengshinlee.com/hosts
+  
+Time
+  $(date)
 EOF
 
 sed -i '1i\<pre>' index.html
