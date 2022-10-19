@@ -14,7 +14,7 @@ fi
 
 cp hosts index.html
 sed -i 's#^#  #g' index.html
-sed -i '1i\Copy' index.html
+sed -i '1i\Read' index.html
 cat >>index.html <<EOF
 
 Download
