@@ -4,11 +4,13 @@ if [ -f "index.html" ]; then
     rm index.html
 fi
 
-cat >404.html <<EOF
+if [ ! -f 404.html ]; then
+    cat >404.html <<EOF
 <pre>
 404
 </pre>
 EOF
+fi
 
 cp hosts index.html
 sed -i '1i\<pre>' index.html
