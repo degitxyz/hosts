@@ -9,3 +9,7 @@ cat >404.html <<EOF
 404
 </pre>
 EOF
+
+cp hosts index.html
+sed -i '1i\<pre>' index.html
+sed -i '$a\</pre>' index.html
