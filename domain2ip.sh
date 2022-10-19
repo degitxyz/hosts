@@ -49,6 +49,11 @@ function main() {
         "cloudflare.com"
         "dash.cloudflare.com"
         "pkg.cloudflareclient.com"
+        
+        "account.proton.me"
+        "account.protonvpn.com"
+        "proton.me"
+        "protonvpn.com"
     )
 
     if [ -f "hosts" ]; then
