@@ -13,6 +13,7 @@ function main() {
         "atom.io"
         "classroom.github.com"
         "cli.github.com"
+        "codeload.github.com"
         "desktop.github.com"
         "docs.github.com"
         "education.github.com"
