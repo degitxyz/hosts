@@ -19,7 +19,10 @@ cat >>index.html <<EOF
 
 Download
   https://hosts.sengshinlee.com/hosts
-  
+
+GitHub
+  https://github.com/sengshinlee/hosts
+
 Time
   $(date)
 EOF
