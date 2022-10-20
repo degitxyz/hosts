@@ -49,6 +49,9 @@ function main() {
         "cloudflare.com"
         "dash.cloudflare.com"
         "pkg.cloudflareclient.com"
+        
+        "open.spotify.com"
+        "spotify.com"
     )
 
     if [ -f "hosts" ]; then
