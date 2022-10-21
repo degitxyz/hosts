@@ -52,6 +52,9 @@ function main() {
         
         "open.spotify.com"
         "spotify.com"
+        
+        "apkpure.com"
+        "d.apkpure.com"
     )
 
     if [ -f "hosts" ]; then
