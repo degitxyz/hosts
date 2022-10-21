@@ -71,9 +71,9 @@ function main() {
     cat >>hosts <<EOF
 
 C:\Windows\System32\drivers\etc\hosts
-/etc/hosts
-https://hosts.sengshinlee.com/hosts-go-latest.apk
 /system/etc/hosts
+https://hosts.sengshinlee.com/hosts-go-latest.apk
+/etc/hosts
 EOF
 
     if [ -f "hosts-go-latest.apk" ]; then
