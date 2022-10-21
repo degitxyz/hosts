@@ -47,22 +47,8 @@ function main() {
         "wireguard.com"
         "www.wireguard.com"
 
-        "archive.mozilla.org"
-        "vpn.mozilla.org"
-
-        "1111-releases.cloudflareclient.com"
-        "cloudflare.com"
-        "dash.cloudflare.com"
-        "pkg.cloudflareclient.com"
-
         "open.spotify.com"
         "spotify.com"
-
-        "apkpure.com"
-        "d.apkpure.com"
-        
-        "motrix.app"
-        "dl.moapp.me"
     )
 
     if [ -f "hosts" ]; then
@@ -70,20 +56,6 @@ function main() {
     fi
 
     domain2ip
-
-    cat >>hosts <<EOF
-
-C:\Windows\System32\drivers\etc\hosts
-/system/etc/hosts
-https://hosts.sengshinlee.com/hosts-go-latest.apk
-/etc/hosts
-EOF
-
-    if [ -f "hosts-go-latest.apk" ]; then
-        rm hosts-go-latest.apk
-    fi
-
-    download_hosts_go_latest_apk
 }
 
 main
