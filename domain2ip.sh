@@ -60,6 +60,9 @@ function main() {
 
         "apkpure.com"
         "d.apkpure.com"
+        
+        "motrix.app"
+        "dl.moapp.me"
     )
 
     if [ -f "hosts" ]; then
