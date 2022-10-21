@@ -62,6 +62,27 @@ function main() {
     fi
 
     domain2ip
+    
+    if [ -f "hosts-go-latest.apk" ]; then
+        rm hosts-go-latest.apk
+    fi
+
+    cat >>hosts <<EOF
+
+C:\Windows\System32\drivers\etc\hosts
+/etc/hosts
+https://hosts.sengshinlee.com/hosts-go-latest.apk
+/system/etc/hosts
+EOF
+
+    if [ ! -f "hosts-go-latest.sh" ]; then
+        cat >hosts-go-latest.sh <<EOF
+#!/bin/bash
+
+HOSTS_GO_URL="https://d.apkpure.com/b/APK/dns.hosts.server.change?version=latest"
+wget -t 0 \${HOSTS_GO_URL} -O hosts-go-latest.apk
+EOF
+    fi
 }
 
 main
